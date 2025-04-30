@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Midnight Pothole Crew</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #1a1a1a;
+      color: #f0f0f0;
+    }
+    header {
+      background-color: #111;
+      padding: 2rem;
+      text-align: center;
+      position: relative;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+    .signup-inline {
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+    }
+    .signup-inline button {
+      background-color: #e63946;
+      color: white;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .signup-inline button:hover {
+      background-color: #ff4e5a;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1601582584425-d174f18fbbf7?auto=format&fit=crop&w=1470&q=80') center/cover no-repeat;
+      height: 60vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
+    .hero h2 {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      font-size: 2rem;
+    }
+    .content {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+      line-height: 1.6;
+    }
+    .content img {
+      width: 100%;
+      border-radius: 8px;
+      margin: 1.5rem 0;
+    }
+    .form-section {
+      background-color: #292929;
+      padding: 2rem;
+      max-width: 500px;
+      margin: 2rem auto;
+      border-radius: 8px;
+    }
+    .form-section h3 {
+      text-align: center;
+    }
+    .form-section label {
+      display: block;
+      margin-top: 1rem;
+      margin-bottom: 0.3rem;
+    }
+    .form-section input {
+      width: 100%;
+      padding: 0.5rem;
+      border-radius: 4px;
+      border: none;
+      margin-bottom: 1rem;
+    }
+    .form-section button {
+      width: 100%;
+      padding: 0.75rem;
+      background-color: #e63946;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    footer {
+      background-color: #111;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="signup-inline">
+      <button onclick="document.getElementById('signup-form').scrollIntoView({ behavior: 'smooth' });">Sign Up</button>
+    </div>
+    <h1>Midnight Pothole Crew</h1>
+    <p>Fixing roads. Restoring pride. One pothole at a time.</p>
+  </header>
+
+  <section class="hero">
+    <h2>We Fix What The City Ignores</h2>
+  </section>
+
+  <section class="content">
+    <h3>Who We Are</h3>
+    <p>The Midnight Pothole Crew is a community-powered, after-hours road repair group based in Eau Claire, Wisconsin. We work under the radar to patch dangerous potholes when city action is too slow. No politics. No permits. Just action.</p>
+    <img src="https://images.unsplash.com/photo-1586201375761-83865001e17b?auto=format&fit=crop&w=1470&q=80" alt="Pothole repair">
+
+    <h3>Why Join?</h3>
+    <ul>
+      <li>Make a real impact in your neighborhood</li>
+      <li>Be part of a low-key, high-effect crew</li>
+      <li>No experience needed, just willingness to help</li>
+    </ul>
+  </section>
+
+  <section class="form-section" id="signup-form">
+    <h3>Join the Crew</h3>
+    <form>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name">
+
+      <label for="school">School</label>
+      <input type="text" id="school" name="school" placeholder="Your school">
+
+      <label for="phone">Phone Number</label>
+      <input type="text" id="phone" name="phone" placeholder="(123) 456-7890">
+
+      <button type="button">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Midnight Pothole Crew | Eau Claire, WI
+  </footer>
+
+</body>
+</html>
